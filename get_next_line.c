@@ -46,14 +46,14 @@ char    *get_next_line(int fd)
 				return (NULL);
 			}
 			// 4.5) Tratar casos bytes = 0 (EOF)
-			if (bytes = 0)
+			if (bytes == 0)
 			{
 				free(buffer);
 				if (stash)
 				{
-					buffer = stash;
+					line = stash;
 					stash = NULL;
-					return (buffer);
+					return (line);
 				}
 				return (NULL);
 			}
@@ -64,6 +64,8 @@ char    *get_next_line(int fd)
 		stash = ft_strjoin(stash, buffer);
 		free(buffer);
 	}
+	if (!stash)
+		return (NULL);
 	line = ft_substr(stash, 0, ft_fb(stash) + 1, 0);
 	stash = ft_substr(stash, ft_fb(stash) + 1, ft_strlen(stash), 1);
 	return (line);

@@ -19,12 +19,13 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <fcntl.h>
 
 char    *get_next_line(int fd);
 char	*ft_strjoin(char *stash, char *buffer);
 char	*ft_substr(char *s, size_t start, size_t len, size_t f);
 
-size_t	ft_fb(char *s);
+ssize_t	ft_fb(char *s);
 size_t	ft_strlen(char *s);
 
 # endif
