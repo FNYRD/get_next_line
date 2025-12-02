@@ -12,55 +12,46 @@
 
 #include	"get_next_line.h"
 
-char    *get_next_line(int fd)
+char    *zero(char **stash, char **buffer, ssize_t bytes)
 {
-    static char *stash;
-    char        *buffer;
-    ssize_t     bytes;
-    char        *line;
-
-    // 1) Comprobar fd y BUFFER_SIZE
-	if (fd < 0 || BUFFER_SIZE <= 0)
+	char *line;
+	
+	if (bytes < 0)
+	{
+		if (*stash)
+		{			
+			free (*stash);
+			*stash = NULL;
+		}
+		if (buffer && *buffer)
+    		free(*buffer);
 		return (NULL);
-	bytes = 1;
+	}
+	free(*buffer);
+	if (*stash)
+	{
+		line = *stash;
+		*stash = NULL;
+		return (line);
+	}
+	return (NULL);
+}
+
+char    *processor(int fd, ssize_t bytes)
+{
+	static char	*stash;
+	char		*buffer;
+	char		*line;
+
 	while (ft_fb(stash) == -1 && bytes > 0)
 	{		
-		// 2) Reservar buffer
 		buffer = (char *)malloc((BUFFER_SIZE + 1) * sizeof(char));
 		if (!buffer)
-		{
-			if (stash)
-				free (stash);
-			return (NULL);
-		}
-		// 3) Leer del fd
+			return (zero(&stash, NULL, -1));
 		bytes = read(fd, buffer, BUFFER_SIZE);
 		if (bytes <= 0)
-		{		
-			// 4) Tratar casos bytes < 0 (error)
-			if (bytes < 0)
-			{
-				if (stash)
-					free (stash);
-				free (buffer);
-				return (NULL);
-			}
-			// 4.5) Tratar casos bytes = 0 (EOF)
-			if (bytes == 0)
-			{
-				free(buffer);
-				if (stash)
-				{
-					line = stash;
-					stash = NULL;
-					return (line);
-				}
-				return (NULL);
-			}
-		}
-		// 5) (Más adelante) acumular en stash, buscar '\n', etc.
+			return (zero(&stash, &buffer, bytes));
 		buffer[bytes] = '\0';
-		// 6) Creacion de stash
 		stash = ft_strjoin(stash, buffer);
 		free(buffer);
 	}
@@ -69,4 +60,11 @@ char    *get_next_line(int fd)
 	line = ft_substr(stash, 0, ft_fb(stash) + 1, 0);
 	stash = ft_substr(stash, ft_fb(stash) + 1, ft_strlen(stash), 1);
 	return (line);
+}
+
+char    *get_next_line(int fd)
+{
+	if (fd < 0 || BUFFER_SIZE <= 0)
+		return (NULL);
+	return (processor(fd, 1));
 }
