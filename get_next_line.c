@@ -10,21 +10,21 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"get_next_line.h"
+#include "get_next_line.h"
 
-char    *zero(char **stash, char **buffer, ssize_t bytes)
+char	*zero(char **stash, char **buffer, ssize_t bytes)
 {
-	char *line;
-	
+	char	*line;
+
 	if (bytes < 0)
 	{
 		if (*stash)
-		{			
+		{
 			free (*stash);
 			*stash = NULL;
 		}
 		if (buffer && *buffer)
-    		free(*buffer);
+			free(*buffer);
 		return (NULL);
 	}
 	free(*buffer);
@@ -37,14 +37,32 @@ char    *zero(char **stash, char **buffer, ssize_t bytes)
 	return (NULL);
 }
 
-char    *processor(int fd, ssize_t bytes)
+static int	fd_fail(int fd, char **stash)
+{
+	char	dummy;
+
+	if (read(fd, &dummy, 0) < 0)
+	{
+		if (stash && *stash)
+		{
+			free(*stash);
+			*stash = NULL;
+		}
+		return (0);
+	}
+	return (1);
+}
+
+char	*processor(int fd, ssize_t bytes)
 {
 	static char	*stash;
 	char		*buffer;
 	char		*line;
 
+	if (fd_fail(fd, &stash) == 0)
+		return (NULL);
 	while (ft_fb(stash) == -1 && bytes > 0)
-	{		
+	{
 		buffer = (char *)malloc((BUFFER_SIZE + 1) * sizeof(char));
 		if (!buffer)
 			return (zero(&stash, NULL, -1));
@@ -62,7 +80,7 @@ char    *processor(int fd, ssize_t bytes)
 	return (line);
 }
 
-char    *get_next_line(int fd)
+char	*get_next_line(int fd)
 {
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);

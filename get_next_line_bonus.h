@@ -1,20 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.h                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jericard <jericard@student.42porto.co      +#+  +:+       +#+        */
+/*   By: jericard <jericard@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/26 18:32:11 by jericard          #+#    #+#             */
-/*   Updated: 2025/11/26 18:32:12 by jericard         ###   ########.fr       */
+/*   Created: 2025/12/03 14:48:39 by jericard          #+#    #+#             */
+/*   Updated: 2025/12/03 14:48:40 by jericard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef GET_NEXT_LINE_BONUS_H
+# define GET_NEXT_LINE_BONUS_H
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 4096
+# endif
+
+# ifndef MAX_FD
+#  define MAX_FD 4096
 # endif
 
 # include <unistd.h>

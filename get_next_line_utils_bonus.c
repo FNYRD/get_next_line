@@ -1,10 +1,22 @@
-#include	"gnl.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jericard <jericard@student.42porto.com>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/12/03 14:57:45 by jericard          #+#    #+#             */
+/*   Updated: 2025/12/03 14:57:46 by jericard         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "get_next_line_bonus.h"
 
 char	*ft_strdup(char *src)
 {
-	int i;
-	int len;
-	char *out;
+	int		i;
+	int		len;
+	char	*out;
 
 	i = 0;
 	len = ft_strlen(src);
@@ -27,7 +39,6 @@ size_t	ft_strlen(char *s)
 	return (i);
 }
 
-
 char	*ft_substr(char *s, size_t start, size_t len, size_t f)
 {
 	size_t	i;
@@ -48,7 +59,7 @@ char	*ft_substr(char *s, size_t start, size_t len, size_t f)
 		}
 		i++;
 	}
-	str[j] = 0;
+	str[j] = '\0';
 	if (f == 1)
 		free (s);
 	return (str);
@@ -76,13 +87,15 @@ char	*ft_strjoin(char *stash, char *buffer)
 	char	*o_stash;
 	char	*start;
 	char	*str;
+	size_t	stash_len;
 
 	if (!stash && !buffer)
 		return (NULL);
 	if (!stash)
 		return (ft_strdup(buffer));
 	o_stash = stash;
-	str = (char *)malloc((ft_strlen(stash) + ft_strlen(buffer) + 1) * sizeof(char));
+	stash_len = ft_strlen(stash);
+	str = (char *)malloc((stash_len + ft_strlen(buffer) + 1) * sizeof(char));
 	if (!str)
 		return (NULL);
 	start = str;

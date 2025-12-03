@@ -10,18 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"get_next_line.h"
+#include "get_next_line.h"
 
 char	*ft_strdup(char *src)
 {
-	int i;
-	int len;
-	char *out;
+	int		i;
+	int		len;
+	char	*out;
 
 	i = 0;
 	len = ft_strlen(src);
 	out = malloc(sizeof(char) * (len + 1));
-
 	while (i <= len)
 	{
 		out[i] = src[i];
@@ -39,7 +38,6 @@ size_t	ft_strlen(char *s)
 		i++;
 	return (i);
 }
-
 
 char	*ft_substr(char *s, size_t start, size_t len, size_t f)
 {
@@ -89,13 +87,15 @@ char	*ft_strjoin(char *stash, char *buffer)
 	char	*o_stash;
 	char	*start;
 	char	*str;
+	size_t	stash_len;
 
 	if (!stash && !buffer)
 		return (NULL);
 	if (!stash)
 		return (ft_strdup(buffer));
 	o_stash = stash;
-	str = (char *)malloc((ft_strlen(stash) + ft_strlen(buffer) + 1) * sizeof(char));
+	stash_len = ft_strlen(stash);
+	str = (char *)malloc((stash_len + ft_strlen(buffer) + 1) * sizeof(char));
 	if (!str)
 		return (NULL);
 	start = str;
