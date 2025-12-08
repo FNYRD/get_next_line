@@ -49,16 +49,17 @@ char	*ft_substr(char *s, size_t start, size_t len, size_t f)
 
 	str = malloc(sizeof(char) * (len + 1));
 	if (!str)
+	{
+		if (f == 1)
+			free(s);
 		return (NULL);
+	}
 	i = 0;
 	j = 0;
 	while (s[i])
 	{
 		if (i >= start && j < len)
-		{
-			str[j] = s[i];
-			j++;
-		}
+			str[j++] = s[i];
 		i++;
 	}
 	str[j] = 0;

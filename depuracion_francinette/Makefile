@@ -2,8 +2,8 @@ TIMEOUT		= 10
 CFLAGS		= -g -fsanitize=address -Wall -Wextra -Werror
 STRICT		=
 UTILS 		= utils/malloc_mock.c utils/utils.c file_utils.c
-TEST_FILES	= ./get_next_line.c ./get_next_line_utils.c
-BONUS_FILES	= ./get_next_line_bonus.c ./get_next_line_utils_bonus.c
+TEST_FILES	= ../get_next_line.c ../get_next_line_utils.c
+BONUS_FILES	= ../get_next_line_bonus.c ../get_next_line_utils_bonus.c
 TIMEOUT_ARG	= -D TIMEOUT=$(TIMEOUT)
 
 ifdef EXEC_STRICT
