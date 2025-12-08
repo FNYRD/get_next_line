@@ -92,8 +92,8 @@ char	*ft_strjoin(char *stash, char *buffer)
 
 	if (!stash && !buffer)
 		return (NULL);
-	if (!stash)
-		return (ft_strdup(buffer));
+	if (!stash && (stash = ft_strdup(buffer)))
+		return (stash);
 	o_stash = stash;
 	str = (char *)malloc((flen(stash) + flen(buffer) + 1) * sizeof(char));
 	if (!str)

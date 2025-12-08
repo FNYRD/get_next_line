@@ -142,3 +142,2324 @@
 ##==##==##&&##==##==##./test1.out
 ##==##==##&&##==##==##./test1.out
 ##==##==##&&##==##==##./test1.out
+##==##==##&&##==##==##./test1.out
+##==##==##&&##==##==##./test1.out
+##==##==##&&##==##==##./test1.out
+##==##==##&&##==##==##./test1.out
+##==##==##&&##==##==##./test1.out
+##==##==##&&##==##==##./test1.out
+##==##==##&&##==##==##./test1.out
+##==##==##&&##==##==##./test1.out
+##==##==##&&##==##==##./test1.out
+##==##==##&&##==##==##./test1.out
+##==##==##&&##==##==##./test1.out
+##==##==##&&##==##==##./test2.out
+##==##==##&&##==##==##./test2.out
+##==##==##&&##==##==##./test2.out
+##==##==##&&##==##==##./test2.out
+##==##==##&&##==##==##./test2.out
+##==##==##&&##==##==##./test2.out
+##==##==##&&##==##==##./test2.out
+##==##==##&&##==##==##./test2.out
+##==##==##&&##==##==##./test2.out
+##==##==##&&##==##==##./test2.out
+##==##==##&&##==##==##./test2.out
+##==##==##&&##==##==##./test2.out
+##==##==##&&##==##==##./test2.out
+##==##==##&&##==##==##./test2.out
+##==##==##&&##==##==##./test3.out
+##==##==##&&##==##==##./test3.out
+##==##==##&&##==##==##./test3.out
+##==##==##&&##==##==##./test3.out
+##==##==##&&##==##==##./test3.out
+##==##==##&&##==##==##./test3.out
+##==##==##&&##==##==##./test3.out
+##==##==##&&##==##==##./test3.out
+##==##==##&&##==##==##./test3.out
+##==##==##&&##==##==##./test3.out
+##==##==##&&##==##==##./test3.out
+##==##==##&&##==##==##./test3.out
+##==##==##&&##==##==##./test3.out
+##==##==##&&##==##==##./test1.out
+##==##==##&&##==##==##./test1.out
+##==##==##&&##==##==##./test1.out
+##==##==##&&##==##==##./test1.out
+##==##==##&&##==##==##./test1.out
+[1;31mError[0m in test 4: [0;36mget_next_line(5: "only_nl.txt"):
+[0;35mmalloc [0mprotection check for 4th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007eab48 main + 5432
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000000350 - 2 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f2ea0 ft_strdup + 76
+3   test1.out                           0x00000001007f3524 ft_strjoin + 100
+4   test1.out                           0x00000001007f2998 processor + 648
+5   test1.out                           0x00000001007f2dec get_next_line + 48
+6   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+7   test1.out                           0x00000001007eab48 main + 5432
+8   dyld                                0x000000019f8add54 start + 7184
+
+##==##==##&&##==##==##./test1.out
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "multiple_nl.txt"):
+[0;35mmalloc [0mprotection check for 4th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007eb090 main + 6784
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000000950 - 2 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f2ea0 ft_strdup + 76
+3   test1.out                           0x00000001007f3524 ft_strjoin + 100
+4   test1.out                           0x00000001007f2998 processor + 648
+5   test1.out                           0x00000001007f2dec get_next_line + 48
+6   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+7   test1.out                           0x00000001007eb090 main + 6784
+8   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "multiple_nl.txt"):
+[0;35mmalloc [0mprotection check for 8th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007eb090 main + 6784
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000000e50 - 2 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007eb090 main + 6784
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "multiple_nl.txt"):
+[0;35mmalloc [0mprotection check for 12th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007eb090 main + 6784
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6020000014d0 - 2 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007eb090 main + 6784
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "multiple_nl.txt"):
+[0;35mmalloc [0mprotection check for 16th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007eb090 main + 6784
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000001cd0 - 2 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007eb090 main + 6784
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "multiple_nl.txt"):
+[0;35mmalloc [0mprotection check for 20th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007eb090 main + 6784
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000002650 - 2 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007eb090 main + 6784
+7   dyld                                0x000000019f8add54 start + 7184
+
+##==##==##&&##==##==##./test1.out
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 4th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000007970 - 2 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f2ea0 ft_strdup + 76
+3   test1.out                           0x00000001007f3524 ft_strjoin + 100
+4   test1.out                           0x00000001007f2998 processor + 648
+5   test1.out                           0x00000001007f2dec get_next_line + 48
+6   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+7   test1.out                           0x00000001007eb7b4 main + 8612
+8   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 92th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x60400002bb90 - 44 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 180th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x60400005de90 - 44 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 184th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x60200011afd0 - 2 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 272th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x60400009c510 - 44 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 276th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6020001c8d10 - 2 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 280th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6020001cfbb0 - 2 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 368th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6040000e8410 - 44 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 372th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6020002964f0 - 2 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 376th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x60200029ec50 - 2 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 380th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6020002a7530 - 2 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007eb7b4 main + 8612
+7   dyld                                0x000000019f8add54 start + 7184
+
+##==##==##&&##==##==##./test1.out
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "lines_around_10.txt"):
+[0;35mmalloc [0mprotection check for 24th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007ebcfc main + 9964
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x60200000c690 - 12 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007ebcfc main + 9964
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "lines_around_10.txt"):
+[0;35mmalloc [0mprotection check for 46th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007ebcfc main + 9964
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000018490 - 11 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007ebcfc main + 9964
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "lines_around_10.txt"):
+[0;35mmalloc [0mprotection check for 72th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007ebcfc main + 9964
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6020000290d0 - 13 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007ebcfc main + 9964
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "lines_around_10.txt"):
+[0;35mmalloc [0mprotection check for 96th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007ebcfc main + 9964
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x60200003b090 - 12 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007ebcfc main + 9964
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "lines_around_10.txt"):
+[0;35mmalloc [0mprotection check for 108th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007ebcfc main + 9964
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000044e90 - 6 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007ebcfc main + 9964
+7   dyld                                0x000000019f8add54 start + 7184
+
+##==##==##&&##==##==##./test1.out
+[1;31mError[0m in test 10: [0;36mget_next_line(5: "read_error.txt"):
+[0;35mmalloc [0mprotection check for 24th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007ec3f0 main + 11744
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x60200000b910 - 12 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007ec3f0 main + 11744
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 10: [0;36mget_next_line(5: "read_error.txt"):
+[0;35mmalloc [0mprotection check for 48th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007ec3f0 main + 11744
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000017a50 - 12 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007ec3f0 main + 11744
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 10: [0;36mget_next_line(5: "read_error.txt"):
+[0;35mmalloc [0mprotection check for 72th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007ec3f0 main + 11744
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000026290 - 12 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007ec3f0 main + 11744
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 10: [0;36mget_next_line(5: "read_error.txt"):
+[0;35mmalloc [0mprotection check for 96th malloc:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f30bc ft_substr + 64
+3   test1.out                           0x00000001007f2a54 processor + 836
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f1ecc null_check_gnl + 80
+6   test1.out                           0x00000001007ec3f0 main + 11744
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6020000371d0 - 12 bytes
+You failed to free the memory allocated at:
+0   test1.out                           0x00000001007ecfb4 _add_malloc + 452
+1   test1.out                           0x00000001007ecde0 malloc + 356
+2   test1.out                           0x00000001007f3568 ft_strjoin + 168
+3   test1.out                           0x00000001007f2998 processor + 648
+4   test1.out                           0x00000001007f2dec get_next_line + 48
+5   test1.out                           0x00000001007f20c8 null_check_gnl + 588
+6   test1.out                           0x00000001007ec3f0 main + 11744
+7   dyld                                0x000000019f8add54 start + 7184
+
+##==##==##&&##==##==##./test1.out
+##==##==##&&##==##==##./test1.out
+##==##==##&&##==##==##./test2.out
+##==##==##&&##==##==##./test2.out
+##==##==##&&##==##==##./test2.out
+##==##==##&&##==##==##./test2.out
+##==##==##&&##==##==##./test2.out
+[1;31mError[0m in test 4: [0;36mget_next_line(5: "only_nl.txt"):
+[0;35mmalloc [0mprotection check for 4th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499ac94 main + 5764
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000000350 - 2 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3d40 ft_strdup + 76
+3   test2.out                           0x00000001049a43c4 ft_strjoin + 100
+4   test2.out                           0x00000001049a3838 processor + 648
+5   test2.out                           0x00000001049a3c8c get_next_line + 48
+6   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+7   test2.out                           0x000000010499ac94 main + 5764
+8   dyld                                0x000000019f8add54 start + 7184
+
+##==##==##&&##==##==##./test2.out
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "multiple_nl.txt"):
+[0;35mmalloc [0mprotection check for 4th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499b1dc main + 7116
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000000550 - 6 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3d40 ft_strdup + 76
+3   test2.out                           0x00000001049a43c4 ft_strjoin + 100
+4   test2.out                           0x00000001049a3838 processor + 648
+5   test2.out                           0x00000001049a3c8c get_next_line + 48
+6   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+7   test2.out                           0x000000010499b1dc main + 7116
+8   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "multiple_nl.txt"):
+[0;35mmalloc [0mprotection check for 6th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499b1dc main + 7116
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6020000006d0 - 6 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499b1dc main + 7116
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "multiple_nl.txt"):
+[0;35mmalloc [0mprotection check for 8th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499b1dc main + 7116
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6020000008d0 - 5 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499b1dc main + 7116
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "multiple_nl.txt"):
+[0;35mmalloc [0mprotection check for 10th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499b1dc main + 7116
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000000b50 - 4 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499b1dc main + 7116
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "multiple_nl.txt"):
+[0;35mmalloc [0mprotection check for 12th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499b1dc main + 7116
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000000e50 - 3 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499b1dc main + 7116
+7   dyld                                0x000000019f8add54 start + 7184
+
+##==##==##&&##==##==##./test2.out
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 4th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000001150 - 11 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3d40 ft_strdup + 76
+3   test2.out                           0x00000001049a43c4 ft_strjoin + 100
+4   test2.out                           0x00000001049a3838 processor + 648
+5   test2.out                           0x00000001049a3c8c get_next_line + 48
+6   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+7   test2.out                           0x000000010499b900 main + 8944
+8   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 14th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6060000025a0 - 50 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 24th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x604000002dd0 - 47 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 26th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x604000003150 - 47 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 38th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x606000003c80 - 53 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 40th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x606000003fe0 - 53 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 42th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6020000083f0 - 10 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 52th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x604000007290 - 48 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 54th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x604000007990 - 48 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 56th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x60200000bc90 - 5 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 58th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x60200000c510 - 4 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499b900 main + 8944
+7   dyld                                0x000000019f8add54 start + 7184
+
+##==##==##&&##==##==##./test2.out
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "lines_around_10.txt"):
+[0;35mmalloc [0mprotection check for 6th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499be48 main + 10296
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x603000002230 - 21 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499be48 main + 10296
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "lines_around_10.txt"):
+[0;35mmalloc [0mprotection check for 10th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499be48 main + 10296
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x603000002500 - 20 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499be48 main + 10296
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "lines_around_10.txt"):
+[0;35mmalloc [0mprotection check for 14th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499be48 main + 10296
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6030000028f0 - 20 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499be48 main + 10296
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "lines_around_10.txt"):
+[0;35mmalloc [0mprotection check for 18th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499be48 main + 10296
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x603000002e60 - 17 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499be48 main + 10296
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "lines_around_10.txt"):
+[0;35mmalloc [0mprotection check for 20th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499be48 main + 10296
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x603000003190 - 17 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499be48 main + 10296
+7   dyld                                0x000000019f8add54 start + 7184
+
+##==##==##&&##==##==##./test2.out
+[1;31mError[0m in test 4: [0;36mget_next_line(5: "giant_line.txt"):
+[0;35mmalloc [0mprotection check for 56th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499c2b8 main + 11432
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: [1;31mTimeout occurred. You can increase the timeout by executing [1;37mfrancinette --timeout <number of seconds>[0m[0m
+##==##==##&&##==##==##./test2.out
+[1;31mError[0m in test 5: [0;36mget_next_line(5: "giant_line_nl.txt"):
+[0;35mmalloc [0mprotection check for 55th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a373c processor + 396
+3   test2.out                           0x00000001049a3c8c get_next_line + 48
+4   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+5   test2.out                           0x000000010499c78c main + 12668
+6   dyld                                0x000000019f8add54 start + 7184
+[0m: [1;31mTimeout occurred. You can increase the timeout by executing [1;37mfrancinette --timeout <number of seconds>[0m[0m
+##==##==##&&##==##==##./test2.out
+[1;31mError[0m in test 10: [0;36mget_next_line(5: "read_error.txt"):
+[0;35mmalloc [0mprotection check for 6th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499ce84 main + 14452
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x603000002170 - 21 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499ce84 main + 14452
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 10: [0;36mget_next_line(5: "read_error.txt"):
+[0;35mmalloc [0mprotection check for 10th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499ce84 main + 14452
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6030000023e0 - 20 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499ce84 main + 14452
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 10: [0;36mget_next_line(5: "read_error.txt"):
+[0;35mmalloc [0mprotection check for 14th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499ce84 main + 14452
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6030000027d0 - 19 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499ce84 main + 14452
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 10: [0;36mget_next_line(5: "read_error.txt"):
+[0;35mmalloc [0mprotection check for 18th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x000000010499ce84 main + 14452
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000001770 - 12 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x000000010499ce84 main + 14452
+7   dyld                                0x000000019f8add54 start + 7184
+
+##==##==##&&##==##==##./test2.out
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "limits.txt"):
+[0;35mmalloc [0mprotection check for 4th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6020000005f0 - 11 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3d40 ft_strdup + 76
+3   test2.out                           0x00000001049a43c4 ft_strjoin + 100
+4   test2.out                           0x00000001049a3838 processor + 648
+5   test2.out                           0x00000001049a3c8c get_next_line + 48
+6   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+7   test2.out                           0x0000000104999498 test_limit + 640
+8   test2.out                           0x000000010499d298 main + 15496
+9   dyld                                0x000000019f8add54 start + 7184
+
+for file:
+[0m1: [0;32mabcdefghi\n
+[0m2: [0;32m[0m
+
+[1;31mError[0m in test 16: [0;36mget_next_line(5: "limits.txt"):
+[0;35mmalloc [0mprotection check for 6th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000000e70 - 12 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+
+for file:
+[0m1: [0;32mabcdefghij\n
+[0m2: [0;32m[0m
+
+[1;31mError[0m in test 24: [0;36mget_next_line(5: "limits.txt"):
+[0;35mmalloc [0mprotection check for 6th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000001990 - 13 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+
+for file:
+[0m1: [0;32mabcdefghijk\n
+[0m2: [0;32m[0m
+
+[1;31mError[0m in test 32: [0;36mget_next_line(5: "limits.txt"):
+[0;35mmalloc [0mprotection check for 6th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x603000001ff0 - 21 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+
+for file:
+[0m1: [0;32mabcdefghijklmnopqrs\n
+[0m2: [0;32m[0m
+
+[1;31mError[0m in test 40: [0;36mget_next_line(5: "limits.txt"):
+[0;35mmalloc [0mprotection check for 8th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x603000002590 - 22 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+
+for file:
+[0m1: [0;32mabcdefghijklmnopqrst\n
+[0m2: [0;32m[0m
+
+[1;31mError[0m in test 48: [0;36mget_next_line(5: "limits.txt"):
+[0;35mmalloc [0mprotection check for 8th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x603000002cb0 - 23 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+
+for file:
+[0m1: [0;32mabcdefghijklmnopqrstu\n
+[0m2: [0;32m[0m
+
+[1;31mError[0m in test 53: [0;36mget_next_line(5: "limits.txt"):
+[0;35mmalloc [0mprotection check for 4th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000003ef0 - 11 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3d40 ft_strdup + 76
+3   test2.out                           0x00000001049a43c4 ft_strjoin + 100
+4   test2.out                           0x00000001049a3838 processor + 648
+5   test2.out                           0x00000001049a3c8c get_next_line + 48
+6   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+7   test2.out                           0x0000000104999498 test_limit + 640
+8   test2.out                           0x000000010499d298 main + 15496
+9   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 53: [0;36mget_next_line(5: "limits.txt"):
+[0;35mmalloc [0mprotection check for 8th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000004270 - 11 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+
+for file:
+[0m1: [0;32mabcdefghi\n
+[0m2: [0;32mklmnopqrs\n
+[0m3: [0;32m[0m
+
+[1;31mError[0m in test 58: [0;36mget_next_line(5: "limits.txt"):
+[0;35mmalloc [0mprotection check for 4th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6020000047b0 - 11 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3d40 ft_strdup + 76
+3   test2.out                           0x00000001049a43c4 ft_strjoin + 100
+4   test2.out                           0x00000001049a3838 processor + 648
+5   test2.out                           0x00000001049a3c8c get_next_line + 48
+6   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+7   test2.out                           0x0000000104999498 test_limit + 640
+8   test2.out                           0x000000010499d298 main + 15496
+9   dyld                                0x000000019f8add54 start + 7184
+
+for file:
+[0m1: [0;32mabcdefghi\n
+[0m2: [0;32mklmnopqrst[0m
+
+[1;31mError[0m in test 63: [0;36mget_next_line(5: "limits.txt"):
+[0;35mmalloc [0mprotection check for 4th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000005050 - 11 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3d40 ft_strdup + 76
+3   test2.out                           0x00000001049a43c4 ft_strjoin + 100
+4   test2.out                           0x00000001049a3838 processor + 648
+5   test2.out                           0x00000001049a3c8c get_next_line + 48
+6   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+7   test2.out                           0x0000000104999498 test_limit + 640
+8   test2.out                           0x000000010499d298 main + 15496
+9   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 63: [0;36mget_next_line(5: "limits.txt"):
+[0;35mmalloc [0mprotection check for 10th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6020000056d0 - 12 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+
+for file:
+[0m1: [0;32mabcdefghi\n
+[0m2: [0;32mklmnopqrst\n
+[0m3: [0;32m[0m
+
+[1;31mError[0m in test 68: [0;36mget_next_line(5: "limits.txt"):
+[0;35mmalloc [0mprotection check for 6th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x603000002f50 - 21 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 68: [0;36mget_next_line(5: "limits.txt"):
+[0;35mmalloc [0mprotection check for 8th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x603000003040 - 21 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+
+for file:
+[0m1: [0;32mabcdefghij\n
+[0m2: [0;32mlmnopqrs\n
+[0m3: [0;32m[0m
+
+[1;31mError[0m in test 70: [0;36mget_next_line(5: "limits.txt")[0m: expected 10 bytes, allocated 21 bytes
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2a4c test_gnl_func_limits + 112
+6   test2.out                           0x000000010499944c test_limit + 564
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+
+should reserve space for the string: "lmnopqrst"
+[1;31mError[0m in test 73: [0;36mget_next_line(5: "limits.txt"):
+[0;35mmalloc [0mprotection check for 6th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x603000003220 - 21 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+
+for file:
+[0m1: [0;32mabcdefghij\n
+[0m2: [0;32mlmnopqrst[0m
+
+[1;31mError[0m in test 78: [0;36mget_next_line(5: "limits.txt"):
+[0;35mmalloc [0mprotection check for 6th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x603000003490 - 21 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 78: [0;36mget_next_line(5: "limits.txt"):
+[0;35mmalloc [0mprotection check for 10th malloc:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a3f5c ft_substr + 64
+3   test2.out                           0x00000001049a38f4 processor + 836
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2d6c null_check_gnl + 80
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000006fb0 - 11 bytes
+You failed to free the memory allocated at:
+0   test2.out                           0x000000010499de5c _add_malloc + 452
+1   test2.out                           0x000000010499dc88 malloc + 356
+2   test2.out                           0x00000001049a4408 ft_strjoin + 168
+3   test2.out                           0x00000001049a3838 processor + 648
+4   test2.out                           0x00000001049a3c8c get_next_line + 48
+5   test2.out                           0x00000001049a2f68 null_check_gnl + 588
+6   test2.out                           0x0000000104999498 test_limit + 640
+7   test2.out                           0x000000010499d298 main + 15496
+8   dyld                                0x000000019f8add54 start + 7184
+
+for file:
+[0m1: [0;32mabcdefghij\n
+[0m2: [0;32mlmnopqrst\n
+[0m3: [0;32m[0m
+
+##==##==##&&##==##==##./test2.out
+##==##==##&&##==##==##./test2.out
+##==##==##&&##==##==##./test3.out
+##==##==##&&##==##==##./test3.out
+##==##==##&&##==##==##./test3.out
+##==##==##&&##==##==##./test3.out
+##==##==##&&##==##==##./test3.out
+[1;31mError[0m in test 4: [0;36mget_next_line(5: "only_nl.txt"):
+[0;35mmalloc [0mprotection check for 4th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x0000000100876c3c main + 5676
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000000230 - 2 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087f8e4 ft_strdup + 76
+3   test3.out                           0x000000010087ff68 ft_strjoin + 100
+4   test3.out                           0x000000010087f3dc processor + 656
+5   test3.out                           0x000000010087f830 get_next_line + 48
+6   test3.out                           0x000000010087eb04 null_check_gnl + 588
+7   test3.out                           0x0000000100876c3c main + 5676
+8   dyld                                0x000000019f8add54 start + 7184
+
+##==##==##&&##==##==##./test3.out
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "multiple_nl.txt"):
+[0;35mmalloc [0mprotection check for 4th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x0000000100877184 main + 7028
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000000430 - 6 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087f8e4 ft_strdup + 76
+3   test3.out                           0x000000010087ff68 ft_strjoin + 100
+4   test3.out                           0x000000010087f3dc processor + 656
+5   test3.out                           0x000000010087f830 get_next_line + 48
+6   test3.out                           0x000000010087eb04 null_check_gnl + 588
+7   test3.out                           0x0000000100877184 main + 7028
+8   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "multiple_nl.txt"):
+[0;35mmalloc [0mprotection check for 6th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x0000000100877184 main + 7028
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000000570 - 6 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x0000000100877184 main + 7028
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "multiple_nl.txt"):
+[0;35mmalloc [0mprotection check for 8th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x0000000100877184 main + 7028
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000000730 - 5 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x0000000100877184 main + 7028
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "multiple_nl.txt"):
+[0;35mmalloc [0mprotection check for 10th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x0000000100877184 main + 7028
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000000970 - 4 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x0000000100877184 main + 7028
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "multiple_nl.txt"):
+[0;35mmalloc [0mprotection check for 12th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x0000000100877184 main + 7028
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x602000000c30 - 3 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x0000000100877184 main + 7028
+7   dyld                                0x000000019f8add54 start + 7184
+
+##==##==##&&##==##==##./test3.out
+[1;31mError[0m in test 12: [0;36mget_next_line(5: "variable_nls.txt")[0m: expected 44 bytes, allocated 45 bytes
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e150 test_gnl_func + 104
+6   test3.out                           0x00000001008777b8 main + 8616
+7   dyld                                0x000000019f8add54 start + 7184
+
+should reserve space for the string: "0123456789012345678901234567890123456789x12"
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 4th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x611000006a80 - 223 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087f8e4 ft_strdup + 76
+3   test3.out                           0x000000010087ff68 ft_strjoin + 100
+4   test3.out                           0x000000010087f3dc processor + 656
+5   test3.out                           0x000000010087f830 get_next_line + 48
+6   test3.out                           0x000000010087eb04 null_check_gnl + 588
+7   test3.out                           0x00000001008778a8 main + 8856
+8   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 6th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x611000007d40 - 223 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 8th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x611000009780 - 222 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 10th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x610000000540 - 179 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 12th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x60d0000006c0 - 136 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 14th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x60d000000ad0 - 135 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 16th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6080000008a0 - 92 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 18th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x608000000ba0 - 91 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 20th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x608000000f20 - 90 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 22th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x604000001550 - 47 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 15: [0;36mget_next_line(5: "variable_nls.txt"):
+[0;35mmalloc [0mprotection check for 24th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6040000018d0 - 46 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x00000001008778a8 main + 8856
+7   dyld                                0x000000019f8add54 start + 7184
+
+##==##==##&&##==##==##./test3.out
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "lines_around_10.txt"):
+[0;35mmalloc [0mprotection check for 4th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x0000000100877df0 main + 10208
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x606000000b00 - 50 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087f8e4 ft_strdup + 76
+3   test3.out                           0x000000010087ff68 ft_strjoin + 100
+4   test3.out                           0x000000010087f3dc processor + 656
+5   test3.out                           0x000000010087f830 get_next_line + 48
+6   test3.out                           0x000000010087eb04 null_check_gnl + 588
+7   test3.out                           0x0000000100877df0 main + 10208
+8   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "lines_around_10.txt"):
+[0;35mmalloc [0mprotection check for 6th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x0000000100877df0 main + 10208
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x606000000ce0 - 50 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x0000000100877df0 main + 10208
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "lines_around_10.txt"):
+[0;35mmalloc [0mprotection check for 8th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x0000000100877df0 main + 10208
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x604000000510 - 39 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x0000000100877df0 main + 10208
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "lines_around_10.txt"):
+[0;35mmalloc [0mprotection check for 10th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x0000000100877df0 main + 10208
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x603000001e40 - 29 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x0000000100877df0 main + 10208
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 8: [0;36mget_next_line(5: "lines_around_10.txt"):
+[0;35mmalloc [0mprotection check for 12th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x0000000100877df0 main + 10208
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x603000001f30 - 17 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x0000000100877df0 main + 10208
+7   dyld                                0x000000019f8add54 start + 7184
+
+##==##==##&&##==##==##./test3.out
+##==##==##&&##==##==##./test3.out
+[1;31mError[0m in test 2: [0;36mget_next_line(5: "giant_line_nl.txt")[0m: expected 16 bytes, allocated 20017 bytes
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e150 test_gnl_func + 104
+6   test3.out                           0x0000000100878634 main + 12324
+7   dyld                                0x000000019f8add54 start + 7184
+
+should reserve space for the string: "another line!!!"
+[1;31mError[0m in test 5: [0;36mget_next_line(5: "giant_line_nl.txt"):
+[0;35mmalloc [0mprotection check for 4th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x0000000100878734 main + 12580
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x62a00003c200 - 20017 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087f8e4 ft_strdup + 76
+3   test3.out                           0x000000010087ff68 ft_strjoin + 100
+4   test3.out                           0x000000010087f3dc processor + 656
+5   test3.out                           0x000000010087f830 get_next_line + 48
+6   test3.out                           0x000000010087eb04 null_check_gnl + 588
+7   test3.out                           0x0000000100878734 main + 12580
+8   dyld                                0x000000019f8add54 start + 7184
+
+##==##==##&&##==##==##./test3.out
+[1;31mError[0m in test 10: [0;36mget_next_line(5: "read_error.txt"):
+[0;35mmalloc [0mprotection check for 4th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x0000000100878e54 main + 14404
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x6040000006d0 - 45 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087f8e4 ft_strdup + 76
+3   test3.out                           0x000000010087ff68 ft_strjoin + 100
+4   test3.out                           0x000000010087f3dc processor + 656
+5   test3.out                           0x000000010087f830 get_next_line + 48
+6   test3.out                           0x000000010087eb04 null_check_gnl + 588
+7   test3.out                           0x0000000100878e54 main + 14404
+8   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 10: [0;36mget_next_line(5: "read_error.txt"):
+[0;35mmalloc [0mprotection check for 6th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x0000000100878e54 main + 14404
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x604000000850 - 45 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x0000000100878e54 main + 14404
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 10: [0;36mget_next_line(5: "read_error.txt"):
+[0;35mmalloc [0mprotection check for 8th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x0000000100878e54 main + 14404
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x604000000a10 - 34 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x0000000100878e54 main + 14404
+7   dyld                                0x000000019f8add54 start + 7184
+
+[1;31mError[0m in test 10: [0;36mget_next_line(5: "read_error.txt"):
+[0;35mmalloc [0mprotection check for 10th malloc:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087e908 null_check_gnl + 80
+6   test3.out                           0x0000000100878e54 main + 14404
+7   dyld                                0x000000019f8add54 start + 7184
+[0m: 
+Memory leak: 0x603000001db0 - 23 bytes
+You failed to free the memory allocated at:
+0   test3.out                           0x00000001008799ec _add_malloc + 452
+1   test3.out                           0x0000000100879818 malloc + 356
+2   test3.out                           0x000000010087fb00 ft_substr + 64
+3   test3.out                           0x000000010087f498 processor + 844
+4   test3.out                           0x000000010087f830 get_next_line + 48
+5   test3.out                           0x000000010087eb04 null_check_gnl + 588
+6   test3.out                           0x0000000100878e54 main + 14404
+7   dyld                                0x000000019f8add54 start + 7184
+
+##==##==##&&##==##==##./test3.out
+##==##==##&&##==##==##./test3.out

@@ -1,3 +1,0 @@
-[1;31mError[0m in test 1: [0;36mget_next_line(5: "1char.txt")[0m: expected 2 bytes, allocated 0 bytes
-Could not find the corresponding allocation or the pointer 0x4a9f950
-should reserve space for the string: "0"
